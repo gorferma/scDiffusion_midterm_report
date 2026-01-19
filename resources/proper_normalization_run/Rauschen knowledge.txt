@@ -1,0 +1,11 @@
+--- ANALYSE DER UNTEREN WERTE (Threshold < 0.2) ---
+Kategorie                      | REAL       | SYNTH      | Diff (Synth-Real)
+-----------------------------------------------------------------
+1. Exakte Nullen (==0)         | 63.15%     | 39.98%     | -23.18%
+2. Rauschen (0 < x < 0.2)      | 28.11%     | 48.78%     | +20.67%
+-----------------------------------------------------------------
+SUMME (Alles < 0.2)            | 91.26%     | 88.75%     | -2.51%
+
+--- INTERPRETATION ---
+ERFOLG: Die Summe der inaktiven Gene ist fast identisch.
+Der VAE hat lediglich die Nullen in Rauschen verwandelt (Shift von Kat 1 zu 2).
