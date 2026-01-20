@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: /Images/Title_page.jpg
+background: Images/Title_page.jpg
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -128,7 +128,7 @@ layout: section
 <h2 class="text-center">scDiffusion - Architecture</h2>
 
 <div class="flex justify-center items-center h-full">
-  <img src="/Images/model_archi.png" class="max-h-110 rounded-lg shadow-xl" />
+  <img src="./Images/model_archi.png" class="max-h-110 rounded-lg shadow-xl" />
 </div>
 
 ---
@@ -318,10 +318,10 @@ layout: section
 
 <div class="flex flex-col gap-4 items-center justify-start -mt-16">
 <div v-click="2" class="w-full h-56 flex items-center justify-center">
-  <img src="/Images/VAE_Training_Loss_From_Scratch_HVG2000.png" class="h-full object-contain rounded-lg shadow-sm" alt="VAE Loss Graph" />
+  <img src="./Images/VAE_Training_Loss_From_Scratch_HVG2000.png" class="h-full object-contain rounded-lg shadow-sm" alt="VAE Loss Graph" />
 </div>
 <div v-click="2" class="w-full h-56 flex items-center justify-center">
-  <img src="/Images/VAE_UMAP_Latent_Space_HVG2000_From_Scratch.png" class="h-full object-contain rounded-lg shadow-sm" alt="Latent Space UMAP" />
+  <img src="./Images/VAE_UMAP_Latent_Space_HVG2000_From_Scratch.png" class="h-full object-contain rounded-lg shadow-sm" alt="Latent Space UMAP" />
 </div>
 </div>
 
@@ -335,7 +335,7 @@ layout: section
 
 <div v-click="1" class="flex flex-col items-center">
   <h3 class="font-bold text-teal-700 mb-2">Unconditional Generation</h3>
-  <img src="/resources/wrong_library_size_run/Unconditional_UMAP_Unscaled.png" class="h-60 object-contain rounded-lg shadow-sm border border-gray-200" />
+  <img src="./resources/wrong_library_size_run/Unconditional_UMAP_Unscaled.png" class="h-60 object-contain rounded-lg shadow-sm border border-gray-200" />
   <div class="mt-4 bg-yellow-50 p-3 rounded-lg border-l-4 border-yellow-500 text-sm text-yellow-800 w-full">
     <p class="font-bold">The Paradox:</p>
     <p>At first glance, the manifold is learned correctly!</p>
@@ -345,7 +345,7 @@ layout: section
 
 <div v-click="2" class="flex flex-col items-center">
   <h3 class="font-bold text-red-700 mb-2">Conditional Generation (B-Cells)</h3>
-  <img src="/resources/wrong_library_size_run/unscaled/conditional_umap_B.png" class="h-60 object-contain rounded-lg shadow-sm border border-gray-200" />
+  <img src="./resources/wrong_library_size_run/unscaled/conditional_umap_B.png" class="h-60 object-contain rounded-lg shadow-sm border border-gray-200" />
   <div class="mt-4 bg-red-50 p-3 rounded-lg border-l-4 border-red-500 text-sm text-red-800 w-full">
     <p class="font-bold">The Reality Check:</p>
     <p>Specific cell type generation fails completely.</p>
@@ -431,7 +431,7 @@ layout: section
 </div>
 
 <div v-click="2" class="flex flex-col items-center">
-  <img src="/resources/proper_normalization_run/Latent_Space_UMAP.png" class="h-60 rounded-lg shadow-lg border-2 border-teal-500" />
+  <img src="./resources/proper_normalization_run/Latent_Space_UMAP.png" class="h-60 rounded-lg shadow-lg border-2 border-teal-500" />
   <p class="text-sm text-teal-700 mt-2 font-bold">Clear Separation of Clusters!</p>
 </div>
 
@@ -455,7 +455,7 @@ layout: section
 
 <div v-click="2" class="flex flex-col items-center">
   <h3 class="font-bold text-red-600 mb-2">The Reality (Shock!)</h3>
-  <img src="/resources/proper_normalization_run/Unconditional_overlay_scaled.png" class="h-45 object-contain rounded border-2 border-red-500" />
+  <img src="./resources/proper_normalization_run/Unconditional_overlay_scaled.png" class="h-45 object-contain rounded border-2 border-red-500" />
   <p class="text-xs text-red-600 mt-2 font-bold">It looks worse than Run 1?!</p>
 </div>
 
@@ -479,7 +479,7 @@ Why does the "Standard" view look so bad when the model is good?
 
 <div v-click="1" class="flex flex-col items-center">
   <div class="text-xs font-bold uppercase text-green-500 mb-1">Unscaled (Truth)</div>
-  <img src="/resources/proper_normalization_run/Unconditional_overlay_unscaled.png" class="h-40 object-contain rounded border-2 border-green-200" />
+  <img src="./resources/proper_normalization_run/Unconditional_overlay_unscaled.png" class="h-40 object-contain rounded border-2 border-green-200" />
   <p class="text-[10px] text-center mt-1 w-60">The manifold is perfect.</p>
 </div>
 
@@ -530,7 +530,7 @@ Why does the "Standard" view look so bad when the model is good?
 layout: center
 ---
 
-<img src="/resources/proper_normalization_run/Unconditional_overlay_denoised_scaled.png" class="h-80 object-contain rounded shadow-lg" />
+<img src="./resources/proper_normalization_run/Unconditional_overlay_denoised_scaled.png" class="h-80 object-contain rounded shadow-lg" />
 
 ---
 
@@ -539,27 +539,27 @@ layout: center
 
 <div class="grid grid-cols-3 gap-x-4 gap-y-2 mt-4">
   <div class="flex flex-col items-center">
-    <img src="/resources/proper_normalization_run/unscaled/conditional_umap_HSC_unscaled_vanilla.png" class="h-28 rounded shadow" />
+    <img src="./resources/proper_normalization_run/unscaled/conditional_umap_HSC_unscaled_vanilla.png" class="h-28 rounded shadow" />
     <span class="text-[10px] mt-1 font-bold">HSC</span>
   </div>
   <div class="flex flex-col items-center">
-    <img src="/resources/proper_normalization_run/unscaled/conditional_umap_B_unscaled_vanilla.png" class="h-28 rounded shadow" />
+    <img src="./resources/proper_normalization_run/unscaled/conditional_umap_B_unscaled_vanilla.png" class="h-28 rounded shadow" />
     <span class="text-[10px] mt-1 font-bold">B Cells</span>
   </div>
   <div class="flex flex-col items-center">
-    <img src="/resources/proper_normalization_run/unscaled/conditional_umap_T_unscaled_vanilla.png" class="h-28 rounded shadow" />
+    <img src="./resources/proper_normalization_run/unscaled/conditional_umap_T_unscaled_vanilla.png" class="h-28 rounded shadow" />
     <span class="text-[10px] mt-1 font-bold">T Cells</span>
   </div>
   <div class="flex flex-col items-center">
-    <img src="/resources/proper_normalization_run/unscaled/conditional_umap_Mono-like_unscaled_vanilla.png" class="h-28 rounded shadow" />
+    <img src="./resources/proper_normalization_run/unscaled/conditional_umap_Mono-like_unscaled_vanilla.png" class="h-28 rounded shadow" />
     <span class="text-[10px] mt-1 font-bold">Mono-like (Malignant)</span>
   </div>
   <div class="flex flex-col items-center">
-    <img src="/resources/proper_normalization_run/unscaled/conditional_umap_earlyEry_unscaled_vanilla.png" class="h-28 rounded shadow" />
+    <img src="./resources/proper_normalization_run/unscaled/conditional_umap_earlyEry_unscaled_vanilla.png" class="h-28 rounded shadow" />
     <span class="text-[10px] mt-1 font-bold">Early Erythroblasts</span>
   </div>
   <div class="flex flex-col items-center">
-    <img src="/resources/proper_normalization_run/unscaled/conditional_umap_pDC_unscaled_vanilla.png" class="h-28 rounded shadow" />
+    <img src="./resources/proper_normalization_run/unscaled/conditional_umap_pDC_unscaled_vanilla.png" class="h-28 rounded shadow" />
     <span class="text-[10px] mt-1 font-bold">pDC</span>
   </div>
 </div>
@@ -574,7 +574,7 @@ layout: full
 
 <div class="flex flex-col items-center justify-center h-full">
   <h2 class="text-3xl font-bold mb-4 text-teal-700">T Cell Detail: Run 2 (Unscaled)</h2>
-  <img src="/resources/proper_normalization_run/unscaled/conditional_umap_T_unscaled_vanilla.png" class="h-[80%] rounded-xl shadow-2xl border-4 border-teal-500/30" />
+  <img src="./resources/proper_normalization_run/unscaled/conditional_umap_T_unscaled_vanilla.png" class="h-[80%] rounded-xl shadow-2xl border-4 border-teal-500/30" />
 </div>
 
 ---
@@ -583,7 +583,7 @@ layout: full
 
 <div class="flex flex-col items-center justify-center h-full">
   <h2 class="text-3xl font-bold mb-4 text-purple-700">pDC Detail: Run 2 (Unscaled)</h2>
-  <img src="/resources/proper_normalization_run/unscaled/conditional_umap_pDC_unscaled_vanilla.png" class="h-[80%] rounded-xl shadow-2xl border-4 border-purple-500/30" />
+  <img src="./resources/proper_normalization_run/unscaled/conditional_umap_pDC_unscaled_vanilla.png" class="h-[80%] rounded-xl shadow-2xl border-4 border-purple-500/30" />
 </div>
 
 ---
@@ -642,7 +642,7 @@ layout: full
 <div class="grid grid-cols-2 gap-8 mt-4">
   <div class="flex flex-col items-center">
     <h3 class="font-bold text-teal-700 mb-2 text-xl">Real Data</h3>
-    <img src="/resources/proper_normalization_run/unscaled/umap_all_real_with_legend.png" class="h-80 rounded shadow-lg border-2 border-teal-500/50" />
+    <img src="./resources/proper_normalization_run/unscaled/umap_all_real_with_legend.png" class="h-80 rounded shadow-lg border-2 border-teal-500/50" />
     <p class="mt-4 text-sm text-gray-600 font-semibold text-center px-4">
       The Ground Truth biological manifold from the Van Galen dataset.
     </p>
@@ -650,7 +650,7 @@ layout: full
   
   <div class="flex flex-col items-center">
     <h3 class="font-bold text-purple-700 mb-2 text-xl">Synthetic Data</h3>
-    <img src="/resources/proper_normalization_run/unscaled/umap_all_synthetic_with_legend.png" class="h-80 rounded shadow-lg border-2 border-purple-500/50" />
+    <img src="./resources/proper_normalization_run/unscaled/umap_all_synthetic_with_legend.png" class="h-80 rounded shadow-lg border-2 border-purple-500/50" />
     <p class="mt-4 text-sm text-gray-600 font-semibold text-center px-4">
       Generated cells (conditioned on label) reconstruct the manifold structure.
     </p>
