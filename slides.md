@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: Images/Title_page.jpg
+background: ./Images/Title_page.jpg
 class: text-center
 highlighter: shiki
 lineNumbers: false
